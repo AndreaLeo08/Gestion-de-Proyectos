@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.objetosextraviados">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ObjetosExtraviados">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edTxtObjeto"
+            android:hint="Nombre del Objeto" />
+
+        <Button
+            android:text="Eliminar Objeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnAñadirObjeto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnEliminarObjeto"
+            android:onClick="btnEliminarObjetoClick" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewObjeto"
+            android:layout_below="@+id/btnAñadirObjeto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp" />
+
+        <Button
+            android:text="Añadir Objeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/btnAñadirObjeto"
+            android:onClick="btnAñadirObjetoClick"
+            android:layout_below="@+id/edTxtObjeto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </application>
+
+</manifest>
